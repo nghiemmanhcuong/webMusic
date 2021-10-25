@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header row">
+            <div class="header__form row">
+                <div class="header__arow row">
+                    <div class="header__arow-btn">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="header__arow-btn">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+                <div class="header__input row">
+                    <div class="header__input-btn">
+                        <i class="ri-search-line"></i>
+                    </div>
+                    <div class="header__input-box">
+                        <input type="text" placeholder="Tìm Nhạc Theo Tên,Ca Sĩ...">
+                    </div>
+                </div>
+            </div>
+            <div class="header__login row">
+                <div class="login__content">
+                    <h3 class="login__title">cường_T</h3>
+                </div>
+                <div class="login__avatar">
+                    <img class="login__img" src="./img/avatar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="header__navbar">
+            <div class="navbar__logo">
+                <a href="" class="navbar__logo-link">
+                    <h1 class="navbar__title">music</h1>
+                    <span class="navbar__subtitle">tỏi</span>
+                </a>
+            </div>
+            <div class="navbar__menu">
+                <ul class="navbar__list">
+                    <h3 class="navbar__heading">music</h3>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="fas fa-music navbar__btn"></i>
+                            featured
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="ri-radio-fill navbar__btn"></i>
+                            radio
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="fas fa-broadcast-tower navbar__btn"></i>
+                            song list
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="ri-mv-fill navbar__btn"></i>
+                            MV
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar__list">
+                    <h3 class="navbar__heading">my music</h3>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="fas fa-heart navbar__btn"></i>
+                            liked
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="ri-mv-line navbar__btn"></i>
+                            local song
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="ri-download-cloud-line navbar__btn"></i>
+                            download
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="fas fa-play-circle navbar__btn"></i>
+                            play history
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">
+                            <i class="ri-shopping-cart-line navbar__btn"></i>
+                            purchase
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="navbar__list" style="margin-bottom: 1rem;">
+                    <h3 class="navbar__heading">my music list</h3>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">emotional pure music</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">heavy metal</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">may day love</a>
+                    </li>
+                    <button class="navbar__list-btn"> create</button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__playMisic">
+            <div class="cd cd__name">
+                <div class="cd__thumb">
+
+                </div>
+                <div class="cd__content">
+                    <h4 class="cd__name-title">nơi này có anh</h4>
+                    <span class="cd__name-author">sơn tung m-tp</span>
+                </div>
+            </div>
+            <div class="cd cd__control">
+                <div class="cd__control-icon">
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-play" id="icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                </div>
+
+                <input id="progress" class="cd__progress" type="range" value="0" step="1" min="0" max="100">
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="cd cd__icon">
+                <div class="btn btn-volume">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__container">
+            <div class="app__sliders">
+                <h3 class="heading">Albums</h3>
+                <div class="slide__arow row">
+                    <div class="slide__arow-btn">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="slide__arow-btn">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+                <div class="slider__swiper">
+                    <div class="sliders">
+                        <div class="slider">
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album1.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album2.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album3.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album4.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album5.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                            <div class="slider__box">
+                                <div class="slider__img">
+                                    <img src="./img/album6.jpg" alt="">
+                                </div>
+                                <div class="slider__content">
+                                    <h4 class="slider__title">medodrama</h4>
+                                    <slider class="subtitle">sanmckinmis</slider>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end slider -->
+
+            <div class="top__picks">
+                <h3 class="heading">top picks</h3>
+                <div class="content">
+                    <ul>
+                        <li>name</li>
+                        <li>abums</li>
+                        <li>author</li>
+                        <li>time</li>
+                    </ul>
+                </div>
+                <div class="songs">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
