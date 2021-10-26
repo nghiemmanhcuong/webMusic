@@ -1,8 +1,8 @@
 const listSongs = document.querySelector('.songs');
-const cdName = document.querySelector('.cd__name-title');
-const cdAuthor = document.querySelector('.cd__name-author');
-const cdThumb = document.querySelector('.cd__thumb');
-const audio = document.getElementById('audio');
+export const cdName = document.querySelector('.cd__name-title');
+export const cdAuthor = document.querySelector('.cd__name-author');
+export const cdThumb = document.querySelector('.cd__thumb');
+export const audio = document.getElementById('audio');
 const playBtn = document.querySelector('.btn-toggle-play');
 const iconPlay = document.getElementById('icon-play');
 const btnPrev = document.querySelector('.btn-prev');
@@ -10,7 +10,6 @@ const btnNext = document.querySelector('.btn-next');
 const progress = document.getElementById('progress');
 const btnRandom = document.querySelector('.btn-random');
 const btnRepeat = document.querySelector('.btn-repeat');
-
 
 
 
@@ -31,80 +30,80 @@ const app = {
     {
       name: "Cứ Chill Thôi",
       singer: "Suni Hạ Linh & Rhymastic",
-      path: "/assets/songs/song1.mp3",
-      image: "/assets/images/songs/song1.jpg",
+      path: "./assets/songs/song1.mp3",
+      image: "./assets/images/songs/song1.jpg",
       albums:"dễ thương",
       time:"03:54"
     },
     {
       name: "Crush",
       singer: "An An x Vani",
-      path: "/assets/songs/song2.mp3",
-      image: "/assets/images/songs/song2.jpg",
+      path: "./assets/songs/song2.mp3",
+      image: "./assets/images/songs/song2.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "Em Có Nghe",
       singer: "Kha",
-      path: "/assets/songs/song3.mp3",
-      image: "/assets/images/songs/song3.jpg",
+      path: "./assets/songs/song3.mp3",
+      image: "./assets/images/songs/song3.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "LẠC TRÔI ",
       singer: "SƠN TÙNG M-TP",
-      path: "/assets/songs/song4.mp3",
-      image: "/assets/images/songs/song4.jpg",
+      path: "./assets/songs/song4.mp3",
+      image: "./assets/images/songs/song4.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "dreAMEE",
       singer: "Hoàng Dũng, Ricky Star",
-      path: "/assets/songs/song5.mp3",
-      image: "/assets/images/songs/song5.jpg",
+      path: "./assets/songs/song5.mp3",
+      image: "./assets/images/songs/song5.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "Damn",
       singer: "Raftaar x kr$na",
-      path: "/assets/songs/song6.mp3",
-      image: "/assets/images/songs/song6.jpg",
+      path: "./assets/songs/song6.mp3",
+      image: "./assets/images/songs/song6.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "Anh Đã Quen Với Cô Đơn",
       singer: "Soobin Hoàng Sơn",
-      path: "/assets/songs/song7.mp3",
-      image: "/assets/images/songs/song7.jpg",
+      path: "./assets/songs/song7.mp3",
+      image: "./assets/images/songs/song7.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "Túy Âm",
       singer: "Xesi x Masew x Nhatnguyen",
-      path: "/assets/songs/song8.mp3",
-      image: "/assets/images/songs/song8.jpg",
+      path: "./assets/songs/song8.mp3",
+      image: "./assets/images/songs/song8.jpg",
       albums:"nhạc hoa",
       time:"03:54"
     },
     {
       name: "KÉM DUYÊN",
       singer: "RUM X NIT X MASEW",
-      path: "/assets/songs/song9.mp3",
-      image: "/assets/images/songs/song9.jpg",
+      path: "./assets/songs/song9.mp3",
+      image: "./assets/images/songs/song9.jpg",
       albums:"Tình yêu",
       time:"03:54"
     },
     {
       name: "một năm mới bình an",
       singer: "sơn tùng M-TP",
-      path: "/assets/songs/song10.mp3",
-      image: "/assets/images/songs/song10.jpg",
+      path: "./assets/songs/song10.mp3",
+      image: "./assets/images/songs/song10.jpg",
       albums:"tết",
       time:"03:54"
     },
