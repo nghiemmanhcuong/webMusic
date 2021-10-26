@@ -13,6 +13,7 @@ const btnRepeat = document.querySelector('.btn-repeat');
 
 
 
+
 const cdAnimation = cdThumb.animate([{
   transform : 'rotate(360deg)',
 }],{
@@ -129,6 +130,12 @@ function readerSong(){
     const htmls = app.songs.map(function(song,index){
         return `
         <ul class="list__song ${index === app.curentIndex ? 'active':''} row" data-index = "${index}">
+            <div class = "music-bar">
+              <span style = "--i:4;"></span>
+              <span style = "--i:3;"></span>
+              <span style = "--i:2;"></span>
+              <span style = "--i:1;"></span>
+            </div>
             <li class="song__img">
                 <img src="${song.image}" alt="">
             </li>
@@ -240,6 +247,7 @@ function handleEvent(){
       progress.value = currentProgress;
     }
   }
+
 
   // tua song
   progress.onchange = function(e){
