@@ -9,7 +9,7 @@
     .app__container{
         padding-left: var(--mb-1);
         padding-right: var(--mb-1);
-        padding-bottom: 9rem;
+        padding-bottom: 12rem;
     }
     .slider{
         display: grid;
@@ -23,7 +23,7 @@
         flex-direction: column;
     }
     .top__picks {
-        min-width: 75%;
+        width: 75%;
     }
     .header__navbar.active{
         left: 0%;
@@ -38,6 +38,9 @@
     .cd__control{
         width: 50rem;
     }
+    .cd__progress{
+        height: .8rem;
+    }
     .header__arow {
         display: none;
     }
@@ -51,7 +54,7 @@
         right: var(--mb-1-5);
     }
 }
-@media (max-width:768px){
+@media (max-width:767px){
     .cd__control{
         width: 35rem;
     }
@@ -67,11 +70,7 @@
         font-size: 55%;
     }
     .header {
-        left: 0;top: 0;
-        gap: 1rem;
         justify-content: flex-start;
-        padding: var(--mb-1-5) var(--mb-1-5) 0 var(--mb-1-5);
-        width: 100vw;
     }
     .header__navbar{
         width: 23rem;
@@ -82,56 +81,63 @@
     .header__login {
         gap: var(--mb-05);
     }
-    .app__container{
-        padding-left: var(--mb-1);
-        padding-right: var(--mb-1);
-        padding-bottom: 9rem;
+    .header__playMisic {
+        height: 11rem;
+        align-items: flex-end;
+        padding-bottom: var(--mb-1-5);
     }
     .heading{
         padding-top:var(--mb-1-5);
     }
     .slider{
-        display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap: var(--mb-1);
     }
-    .slider__box{
-        margin-right: 0;
+    .top__picks {
+        width: 100%;
     }
-    .toppick-featured{
-        flex-direction: column;
+    .list__song{
+        justify-content: center;
     }
     .song__item{
-        width: 10rem;
+        width: 9rem;
+    }
+    .content ul{
+        margin-left: 7rem;
     }
     .content ul li{
-        width: 10rem;
+        width: 9rem;
     }
     .music-bar{
         right: var(--mb-3);
     }
     .cd__control{
-        width: 17rem;
+        width: 27rem;
     }
     .cd__icon{
-        gap: 0;
+        padding-bottom: 1.3rem;
     }
     .cd__thumb{
-        width: 4rem;
-        height: 4rem;
+        width: 6rem;
+        height: 6rem;
     }
     .cd__name{
         gap: var(--mb-05);
-        min-width: 17rem;
+        min-width: 0rem;
+    }
+    .cd__content{
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .cd__control-icon{
         gap: var(--mb-1);
     }
     .cd__name-title{
-        font-size: 1rem;
+        font-size:var(--smallest-font);
     }
     .cd__name-author{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .btn i{
         font-size: 1.3rem;
@@ -140,11 +146,7 @@
 }
 
 @media (max-width:376px){
-    .top__picks>.heading,
-    .songs{
-        padding-left: 2rem;
-    }
     .cd__name {
-        min-width: 16rem;
+        min-width: 0rem;
     }
 }

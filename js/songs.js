@@ -10,6 +10,9 @@ const btnNext = document.querySelector('.btn-next');
 const progress = document.getElementById('progress');
 const btnRandom = document.querySelector('.btn-random');
 const btnRepeat = document.querySelector('.btn-repeat');
+const btnVolumeUP = document.querySelector('.fa-volume-up');
+const btnVolumeMute = document.querySelector('.fa-volume-mute');
+const cdIcon = document.querySelector('.cd__icon');
 
 
 
@@ -256,7 +259,6 @@ function handleEvent(){
     }
   }
 
-
   // tua song
   progress.onchange = function(e){
     const seekTime = audio.duration / 100 * e.target.value;
@@ -292,6 +294,17 @@ function handleEvent(){
     app.isRepeat = !app.isRepeat;
     btnRepeat.classList.toggle('active',app.isRepeat);
   }
+
+  btnVolumeUP.onclick = function(){
+    cdIcon.classList.add('playing');
+    audio.volume = 0;
+  }
+
+  btnVolumeMute.onclick = function(){
+    cdIcon.classList.remove('playing');
+    audio.volume = 1;
+  }
+
 
   // click listSongs
   listSongs.onclick = function(e){
