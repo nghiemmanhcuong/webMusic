@@ -3,7 +3,8 @@ import {
     cdName,
     cdAuthor,
     cdThumb,
-    audio
+    audio,
+    cdAnimation
 } from './songs.js';
 
 const hotSong = {
@@ -100,6 +101,7 @@ hotsonglist.onclick = function(e){
     cdAuthor.textContent = hotSong.cunrentHotsong.author;
     cdThumb.style.backgroundImage = `url('${hotSong.cunrentHotsong.image}')`
     audio.src = hotSong.cunrentHotsong.path;
+    cdAnimation.play();
     audio.play();
 }
 function startHotSong(){

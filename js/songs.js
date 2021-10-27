@@ -14,7 +14,7 @@ const btnRepeat = document.querySelector('.btn-repeat');
 
 
 
-const cdAnimation = cdThumb.animate([{
+export const cdAnimation = cdThumb.animate([{
   transform : 'rotate(360deg)',
 }],{
   duration:10000,
@@ -108,6 +108,14 @@ const app = {
       albums:"tết",
       time:"03:54"
     },
+    {
+      name: "seve",
+      singer: "Tez Cadey",
+      path: "./assets/songs/song11.mp3",
+      image: "./assets/images/songs/song11.jpg",
+      albums:"vivo",
+      time:"04:31"
+    }
   ],
   defaultProperties(){
     Object.defineProperty(this,'cunrentSong',{
@@ -292,6 +300,7 @@ function handleEvent(){
       app.curentIndex = songElement.dataset.index;
       loadCurentSong();
       activeSong();
+      cdAnimation.play();
       audio.play();
     }
   }
