@@ -59,7 +59,7 @@ body {
 }
 
 .header__form {
-    width: 60rem;
+    flex: 1;
 }
 
 .header__arow-btn i {
@@ -80,6 +80,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
     right: var(--mb-1-5);
+}
+.icon-bar{
+    display: none;
 }
 
 .header__input-box {
@@ -132,6 +135,15 @@ body {
     left: 0;
     top: 0;
     padding-top: 4rem;
+}
+.header__nav-open{
+    display: none;
+}
+.header__nav-close{
+    display: none;
+}
+.header__nav-close{
+    font-size: var(--small-font) !important;
 }
 .navbar__heading{
     font-size: 1.6rem;
