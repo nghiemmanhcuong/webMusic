@@ -429,7 +429,8 @@ body {
 
 .song__img{
     width: 3rem;
-    border-radius: 1rem;
+    height: 3rem;
+    border-radius: 50%;
     overflow: hidden;
 }
 .song__img img{
@@ -439,8 +440,6 @@ body {
 .song__item{
     width: 12rem;
     padding-left: var(--mb-1);
-}
-.song__link{
     color: var(--text-color);
     font-weight: 600;
     font-style: 1.2rem;

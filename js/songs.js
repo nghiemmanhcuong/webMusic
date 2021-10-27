@@ -147,10 +147,10 @@ function readerSong(){
             <li class="song__img">
                 <img src="${song.image}" alt="">
             </li>
-            <li class="song__item"><a class="song__link" href="#">${song.name}</a></li>
-            <li class="song__item"><a class="song__link" href="#">${song.albums}</a></li>
-            <li class="song__item"><a class="song__link" href="#">${song.singer}</a></li>
-            <li class="song__item"><a class="song__link" href="#">${song.time}</a></li>
+            <li class="song__item">${song.name}</li>
+            <li class="song__item">${song.albums}</li>
+            <li class="song__item">${song.singer}</li>
+            <li class="song__item">${song.time}</li>
         </ul>
         `
     })

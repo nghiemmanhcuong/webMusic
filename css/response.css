@@ -85,9 +85,6 @@
     .toppick-featured{
         flex-direction: column;
     }
-    .list__song {
-        justify-content: center;
-    }
     .song__item{
         width: 10rem;
     }
