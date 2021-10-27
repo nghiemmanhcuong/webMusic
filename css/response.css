@@ -72,6 +72,9 @@
     .header {
         justify-content: flex-start;
     }
+    .header__input-box input{
+        font-size: 1.2rem;
+    }
     .header__navbar{
         width: 23rem;
     }
@@ -95,14 +98,11 @@
     .top__picks {
         width: 100%;
     }
-    .list__song{
-        justify-content: center;
-    }
     .song__item{
         width: 9rem;
     }
     .content ul{
-        margin-left: 7rem;
+        margin-left: 4rem;
     }
     .content ul li{
         width: 9rem;
