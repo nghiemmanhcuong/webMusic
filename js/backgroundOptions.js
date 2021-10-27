@@ -8,52 +8,52 @@ const backgorunds = {
     cunrentIndex:0,
     backgorundList:[
         {
-            option:'/assets/images/themeBgs/listTheme1/theme1.jpg',
+            option:'./assets/images/themeBgs/listTheme1/theme1.jpg',
             color:'#37075d'
         },
         {
-            option:'/assets/images/themeBgs/listTheme1/theme2.jpg',
+            option:'./assets/images/themeBgs/listTheme1/theme2.jpg',
             color:'#282828'
         },
         {
-            option:'/assets/images/themeBgs/listTheme2/theme1.jpg',
+            option:'./assets/images/themeBgs/listTheme2/theme1.jpg',
             color:'#061d50'
         },
         {
-            option:'/assets/images/themeBgs/listTheme2/theme2.jpg',
+            option:'./assets/images/themeBgs/listTheme2/theme2.jpg',
             color:'#e7dfdd'
         },
         {
-            option:'/assets/images/themeBgs/listTheme2/theme3.jpg',
+            option:'./assets/images/themeBgs/listTheme2/theme3.jpg',
             color:'#b2d8db'
         },
         {
-            option:'/assets/images/themeBgs/listTheme2/theme4.jpg',
+            option:'./assets/images/themeBgs/listTheme2/theme4.jpg',
             color:'#f9dbdb'
         },
         {
-            option:'/assets/images/themeBgs/listTheme2/theme5.jpg',
+            option:'./assets/images/themeBgs/listTheme2/theme5.jpg',
             color:'#bab8c3'
         },
         {
-            option:'/assets/images/modalThemes/modalTheme3/theme1.jpg',
+            option:'./assets/images/modalThemes/modalTheme3/theme1.jpg',
             color:'#fff'
         },
         {
-            option:'/assets/images/modalThemes/modalTheme3/theme2.jpg',
+            option:'./assets/images/modalThemes/modalTheme3/theme2.jpg',
             color:'#1e1e1e'
 
         },
         {
-            option:'/assets/images/modalThemes/modalTheme3/theme3.jpg',
+            option:'./assets/images/modalThemes/modalTheme3/theme3.jpg',
             color:'#170f23'
         },
         {
-            option:'/assets/images/modalThemes/modalTheme3/theme4.jpg',
+            option:'./assets/images/modalThemes/modalTheme3/theme4.jpg',
             color:'#101f3f'
         },
         {
-            option:'/assets/images/modalThemes/modalTheme3/theme5.jpg',
+            option:'./assets/images/modalThemes/modalTheme3/theme5.jpg',
             color:'#1d375a'
         },
     ],
