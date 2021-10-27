@@ -3,21 +3,17 @@
         left: 0;top: 0;
         gap: 1rem;
         justify-content: space-between;
-        padding: var(--mb-1-5) var(--mb-1-5) 0 var(--mb-1-5);
+        padding: var(--mb-1-5);
         width: 100vw;
     }
-    .app__container{
-        padding-left: var(--mb-1);
-        padding-right: var(--mb-1);
-        padding-bottom: 12rem;
+    .header__form{
+        padding-left: 0;
     }
-    .slider{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: var(--mb-1);
+    .header__input{
+        flex: 1;
     }
-    .slider__box{
-        margin-right: 0;
+    .header__login {
+        padding-right: 0;
     }
     .toppick-featured{
         flex-direction: column;
@@ -53,8 +49,39 @@
         top: var(--mb-1-5);
         right: var(--mb-1-5);
     }
+    .app__container{
+        padding-left: var(--mb-1);
+        padding-right: var(--mb-1);
+        padding-bottom: 12rem;
+    }
+    .slider{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: var(--mb-1);
+    }
+    .slider__box{
+        margin-right: 0;
+    }
+    .background__heading{
+        font-size: 1.8rem;
+    }
+    .background__options{
+        width: 85%;
+        height: 50%;
+        overflow: hidden scroll;    
+    }
+    .background__theme-options{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .theme__action-btn{
+        width: 65%;
+        padding: 1rem 0;
+        font-size: var(--smallest-font);
+        letter-spacing: .5rem;
+        font-weight: 600;
+    }
 }
-@media (max-width:767px){
+@media (max-width:769px){
     .cd__control{
         width: 35rem;
     }
@@ -142,6 +169,9 @@
     .btn i{
         font-size: 1.3rem;
         min-width: 2.5rem;
+    }
+    .background__theme-options{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 

@@ -15,8 +15,6 @@ const btnVolumeMute = document.querySelector('.fa-volume-mute');
 const cdIcon = document.querySelector('.cd__icon');
 
 
-
-
 export const cdAnimation = cdThumb.animate([{
   transform : 'rotate(360deg)',
 }],{
@@ -125,7 +123,7 @@ const app = {
       get:function(){
         return this.songs[this.curentIndex]
       }
-    })
+    });
   }
 }
 
