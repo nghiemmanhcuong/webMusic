@@ -6,6 +6,7 @@
     text-decoration: none;
     text-transform: capitalize;
     list-style: none;
+    letter-spacing: 1px;
 }
 
 :root {
@@ -45,6 +46,13 @@ body {
     gap: var(--mb-2);
     align-items: center;
     justify-content: space-between;
+}
+
+.heading{
+    color: #fff;
+    font-size: 2rem;
+    padding-top: var(--mb-3);
+    text-transform: uppercase;
 }
 
 .app {
@@ -526,17 +534,11 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 400;
-    letter-spacing: .1rem;
 }
 .container__navbar-item.active{
     background-color: rgba(255, 255, 255, .3);
 }
 
-.heading{
-    color: #fff;
-    font-size: 2rem;
-    padding-top: var(--mb-3);
-}
 .album__main{
     padding-top: var(--mb-2);
 }
@@ -651,6 +653,7 @@ body {
     color: var(--gray-color);
     width: 15rem;
     padding-left: 3.5rem;
+    font-size: 1.4rem;
 }
 .songs{
     padding-top: var(--mb-1);
@@ -680,11 +683,11 @@ body {
 .list__song:hover,
 .list__song.active{
     background-color: var(--light-color);
-    border-radius: 1.5rem;
+    border-radius: .5rem;
 }
 .music-bar{
     position: absolute;
-    top: 1.5rem;
+    top: 2rem;
     right: 2rem;
     display: none;
 }
@@ -707,9 +710,9 @@ body {
 }
 
 .song__img{
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: .5rem;
     overflow: hidden;
 }
 .song__img img{
@@ -721,7 +724,7 @@ body {
     padding-left: var(--mb-1);
     color: var(--text-color);
     font-weight: 600;
-    font-style: 1.2rem;
+    font-style: 1.4rem;
     display:-webkit-box;
     -webkit-line-clamp:1;
     -webkit-box-orient: vertical;

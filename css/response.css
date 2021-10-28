@@ -143,17 +143,20 @@
     .top__picks {
         width: 100%;
     }
+    .songs{
+        padding: 0 1rem;
+    }
     .song__item{
         width: 9rem;
     }
     .content ul{
-        margin-left: 4rem;
+        display: none;
     }
     .content ul li{
         width: 9rem;
     }
     .music-bar{
-        right: var(--mb-3);
+        right: var(--mb-2);
     }
     .cd__control{
         width: 27rem;
@@ -190,6 +193,9 @@
     }
     .background__theme-options{
         grid-template-columns: repeat(2,1fr);
+    }
+    .container__navbar-menu{
+        width: 95%;
     }
 }
 

@@ -39,7 +39,7 @@ const backgorunds = {
         },
         {
             option:'./assets/images/modalThemes/modalTheme3/theme1.jpg',
-            color:'#1e1e1e'
+            color:'#3a3a3a'
         },
         {
             color:'#170f23'
