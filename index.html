@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://appafk.files.wordpress.com/2017/04/mp3.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/response.css">
@@ -42,7 +42,7 @@
                 <div class="login__background row background__open-btn">
                     <i class="fas fa-tshirt icon"></i>
                 </div>
-                <div class="login__background row">
+                <div class="login__background row background__cog-btn">
                     <i class="fas fa-cog icon"></i>
                 </div>
                 <div class="login__avatar">
@@ -314,68 +314,21 @@
         </div>
 
         <div class="app__container">
-            <div class="app__sliders">
-                <h3 class="heading">Albums</h3>
-                <div class="slider__swiper">
-                    <div class="sliders">
-                        <div class="slider">
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album1.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">his music journey</h4>
-                                    <slider class="subtitle">sơn tùng M-TP</slider>
-                                </div>
-                            </div>
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album2.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">việt nam tôi</h4>
-                                    <slider class="subtitle">jack</slider>
-                                </div>
-                            </div>
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album3.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">the making of bad habits</h4>
-                                    <slider class="subtitle">ed sheeran</slider>
-                                </div>
-                            </div>
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album4.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">on my way</h4>
-                                    <slider class="subtitle">alan walker</slider>
-                                </div>
-                            </div>
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album5.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">phía sau một cô gái</h4>
-                                    <slider class="subtitle">sobin hoàng sơn</slider>
-                                </div>
-                            </div>
-                            <div class="slider__box">
-                                <div class="slider__img">
-                                    <img src="./assets/images/albums/album6.jpg" alt="">
-                                </div>
-                                <div class="slider__content">
-                                    <h4 class="slider__title">chờ</h4>
-                                    <slider class="subtitle">hương tràm</slider>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="conatainer__user row">
+                <div class="container__user-logo">
+                    <img src="./assets/images/avatar/avatar.jpg" alt="" class="container__user-image">
                 </div>
+                <h1 class="container__user-title">nghiêm mạnh cường</h1>
+            </div>
+            <div class="container__navbar row">
+                <ul class="container__navbar-menu row">
+                    <li class="container__navbar-item active">overview</li>
+                    <li class="container__navbar-item">the songs</li>
+                    <li class="container__navbar-item">playlist</li>
+                    <li class="container__navbar-item">albums</li>
+                    <li class="container__navbar-item">mv</li>
+                    <li class="container__navbar-item">nghệ sĩ</li>
+                </ul>
             </div>
             <!-- end slider -->
             <div class="toppick-featured row">
@@ -409,6 +362,7 @@
                             <div class="slider__item row">
                                 <div class="slide__img" data-index="0">
                                     <img src="./assets/images/Hot Songs/hotsong1.jpg" alt="">
+
                                 </div>
                                 <div class="slide__img" data-index="1">
                                     <img src="./assets/images/Hot Songs/hotsong2.jpg" alt="">
@@ -458,13 +412,227 @@
                     </div>
                 </div>
             </div>
+
+            <div class="app__albums">
+                <h3 class="heading">Albums</h3>
+                <div class="album__main">
+                    <div class="album__list">
+                        <div class="album__item">
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album2.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">việt nam tôi</h4>
+                                    <slider class="album__subtitle">jack</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album3.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">the making of bad habits</h4>
+                                    <slider class="album__subtitle">ed sheeran</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album4.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">on my way</h4>
+                                    <slider class="album__subtitle">alan walker</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album5.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">phía sau một cô gái</h4>
+                                    <slider class="album__subtitle">sobin hoàng sơn</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album6.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">chờ</h4>
+                                    <slider class="album__subtitle">hương tràm</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album1.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">music joyney</h4>
+                                    <slider class="album__subtitle">sơn tùng M-TP</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album7.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">người yêu cũ gửi cho anh 2</h4>
+                                    <slider class="album__subtitle">khởi mi</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album8.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">red</h4>
+                                    <slider class="album__subtitle">taylor swift</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album9.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">boy cold</h4>
+                                    <slider class="album__subtitle">nhiều ca sĩ</slider>
+                                </div>
+                            </div>
+                            <div class="album__box">
+                                <div class="album__img">
+                                    <img src="./assets/images/albums/album10.jpg" alt="">
+                                    <div class="album__img-action row">
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                        <div class="album__img-icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album__content">
+                                    <h4 class="album__title">Meet the Woo</h4>
+                                    <slider class="album__subtitle">American rapper Pop Smoke</slider>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app__mv">
+                
+            </div>
         </div>
     </div>
     <script type="module" src="./js/songs.js"></script>
     <script type="module" src="./js/hotsongs.js"></script>
-    <script src="./js/slides.js"></script>
-    <script src="./js/backgroundOptions.js"></script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/slides.js"></script>
+    <script type="module" src="./js/backgroundOptions.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

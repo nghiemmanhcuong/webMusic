@@ -1,8 +1,6 @@
 const headerNavbarOpen = document.getElementById('header-nav-open');
 const headerNavbarclose = document.getElementById('header-nav-close');
-const headerNavbar = document.querySelector('.header__navbar');
-const header = document.querySelector('.header');
-const headerPlaylist = document.querySelector('.header__playMisic');
+export const headerNavbar = document.querySelector('.header__navbar');
 
 headerNavbarOpen.onclick = function(){
     headerNavbar.classList.add('active');

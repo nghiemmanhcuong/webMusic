@@ -23,7 +23,7 @@
     --mb-1: 1rem;
     --mb-05: .5rem ;
 
-    --big-font:4rem;
+    --big-font:3.5rem;
     --medium-font: 2.5rem;
     --small-font: 1.8rem;
     --smallest-font: 1.3rem;
@@ -37,21 +37,35 @@ html {
 body {
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 .row {
     display: flex;
     gap: var(--mb-2);
     align-items: center;
+    justify-content: space-between;
 }
 
 .app {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden scroll;
     background-image: url('/assets/images/modalThemes/modalTheme3/theme1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+}
+
+.app::-webkit-scrollbar{
+    width: .3rem;
+}
+
+.app::-webkit-scrollbar-thumb{
+    background-color: var(--light-color);
+}
+
+.app::-webkit-scrollbar-track{
+    border-radius: 1.5rem;
 }
 
 .app__backgorund{
@@ -176,22 +190,22 @@ body {
 }
 
 .header {
-    justify-content: space-between;
     position: fixed;
     right: 0;
     left: 25rem;
     width: calc(100% - (25rem));
     padding: var(--mb-2) 0;
-    background: rgba(0,0,0,0);
     background-position: center;
     background-repeat: no-repeat;
     transition: none;
+    z-index: 200;
 }
 
 .header__form {
+    justify-content: flex-start;
     flex: 1;
     padding-left: 6rem;
-    gap: var(--mb-05);
+    gap: var(--mb-1);
 }
 
 .header__arow-btn i {
@@ -276,10 +290,12 @@ body {
 .header__navbar{
     position: fixed;
     width: 25rem;
+    height: 100%;
     left: 0;
     top: 0;
-    padding-top: 4rem;
+    padding-top: 2rem;
     background-color: rgba(255, 255, 255, 0.05);
+    z-index: 299;
 }
 .header__nav-open{
     display: none;
@@ -466,70 +482,162 @@ body {
 }
 /* app__container */
 .app__container{
-    padding-left: 33rem;
-    padding-top: 7rem;
-    padding-right: 5rem;
+    padding: 10rem 5rem 10rem 31rem;
 }
+
+.conatainer__user{
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+.container__user-logo{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container__user-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container__user-title{
+    font-size: var(--big-font);
+    color: var(--text-color);
+}
+
+.container__navbar{
+    width: 100%;
+    justify-content: center;
+}
+.container__navbar-menu{
+    text-align: center;
+    background-color: var(--light-color);
+    border-radius: 1.5rem;
+    padding: .3rem;
+    gap: 0;
+}
+.container__navbar-item{
+    padding: .7rem 3.5rem;
+    min-width: 10rem;
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+.container__navbar-item.active{
+    background-color: rgba(255, 255, 255, .3);
+}
+
 .heading{
     color: #fff;
     font-size: 2rem;
     padding-top: var(--mb-3);
 }
-.slider__swiper{
+.album__main{
     padding-top: var(--mb-2);
 }
-.slide__arow{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: var(--mb-2);
-}
-.slide__arow-btn i{
-    color: var(--red-color);
-    font-size: var(--small-font);
-    cursor: pointer;
-}
-.slider{
-    display: flex;
+.album__item{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     width: 100%;
     gap: var(--mb-1);
 }
-.slider__box{
+.album__box{
     flex: 1 0 17rem;
     display: flex;
     flex-direction: column;
 }
-.slider__img{
+.album__img{
     width: 100%;
     border-radius: 1.5rem;
     overflow: hidden;
     flex: 1;
     cursor: pointer;
+    position: relative;
 }
-.slider__img:hover img{
+.album__img:hover img{
     transform: scale(1.1);
 }
-.slider__img img{
+.album__img:hover .album__img-action{
+    transform: scale(1);
+}
+
+.album__img img{
     object-fit: cover;
     width:100%;
     height: 100%;
 }
-.slider__content{
+.album__img-action{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-opacity);
+    justify-content: center;
+    gap: 1.5rem;
+    transform: scale(0);
+}
+.album__img-icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.album__img-icon:hover{
+    background-color: var(--light-color);
+}
+
+.album__img-icon:nth-child(2){
+    background: none;
+}
+
+.album__img-icon:hover i{
+    transform: scale(1.2);
+}
+
+.album__img-icon i{
+    font-size: var(--small-font);
+    color: var(--text-color);
+}
+
+.album__img-icon:first-child i{
+    color:var(--red-color);
+}
+
+.album__img-icon:nth-child(2) i{
+    font-size: var(--big-font);
+}
+
+.album__content{
     padding-top: var(--mb-1);
     height: 3.8rem;
 }
-.slider__title{
+.album__title{
     font-size: var(--smallest-font);
     color: var(--text-color);
+    cursor: pointer;
+    transition: none;
 }
-.subtitle{
+
+.album__title:hover{
+    color: #6e8ffb;
+}
+
+.album__subtitle{
     color: var(--gray-color);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
-
+/* top picks */
 .top__picks{
-    width: 50rem;
+    width: 65rem;
 }
 .content{
     padding-top: var(--mb-1-5);
@@ -541,7 +649,8 @@ body {
 }
 .content ul li{
     color: var(--gray-color);
-    width: 12rem;
+    width: 15rem;
+    padding-left: 3.5rem;
 }
 .songs{
     padding-top: var(--mb-1);
@@ -564,8 +673,11 @@ body {
    display: flex;
    align-items: center;
    position: relative;
-   transition: .5s linear;
+   transition:none;
+   cursor: pointer;
 }
+
+.list__song:hover,
 .list__song.active{
     background-color: var(--light-color);
     border-radius: 1.5rem;
@@ -680,6 +792,17 @@ body {
     justify-content: space-between;
     width: 100%;
 }   
+.slide__arow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: var(--mb-2);
+}
+.slide__arow-btn i{
+    color: var(--red-color);
+    font-size: var(--medium-font);
+    cursor: pointer;
+}
 .featured .slide__arow .heading{
     padding: 0;
 }

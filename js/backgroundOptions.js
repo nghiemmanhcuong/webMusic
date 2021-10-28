@@ -3,12 +3,14 @@ const appBackground = document.querySelector('.app__backgorund');
 const openBackground = document.querySelector('.background__open-btn');
 const closeBackground = document.querySelector('.background__close-btn');
 const applyBackgroundBtns = document.querySelectorAll('.theme__action-btn');
+const header = document.querySelector('.header');
+const headerPlaylist = document.querySelector('.header__playMisic');
+import {headerNavbar} from './main.js';
 
 const backgorunds = {
-    cunrentIndex:0,
+    cunrentIndex:2,
     backgorundList:[
         {
-            option:'./assets/images/themeBgs/listTheme1/theme1.jpg',
             color:'#37075d'
         },
         {
@@ -37,23 +39,19 @@ const backgorunds = {
         },
         {
             option:'./assets/images/modalThemes/modalTheme3/theme1.jpg',
-            color:'#fff'
+            color:'#1e1e1e'
         },
         {
-            option:'./assets/images/modalThemes/modalTheme3/theme2.jpg',
-            color:'#1e1e1e'
+            color:'#170f23'
 
         },
         {
-            option:'./assets/images/modalThemes/modalTheme3/theme3.jpg',
-            color:'#170f23'
-        },
-        {
-            option:'./assets/images/modalThemes/modalTheme3/theme4.jpg',
             color:'#101f3f'
         },
         {
-            option:'./assets/images/modalThemes/modalTheme3/theme5.jpg',
+            color:'#1d375a'
+        },
+        {
             color:'#1d375a'
         },
     ],
@@ -68,6 +66,7 @@ const backgorunds = {
         applyBackgroundBtns.forEach(function(applyBackgroundBtn){
             applyBackgroundBtn.onclick = function(e){
                 backgorunds.cunrentIndex = Number(e.target.dataset.index);
+                header.style.background = `${backgorunds.cunrentBackground.color}`;
                 headerPlaylist.style.background = `${backgorunds.cunrentBackground.color}`;
                 backgorunds.applyBackground();
             }
@@ -77,8 +76,11 @@ const backgorunds = {
         app.style.backgroundImage = `url("${this.cunrentBackground.option}")`
         app.style.backgroundColor = `${this.cunrentBackground.color}`
         app.style.backgroundRepeat = 'repeat';
-        app.style.backgroundPosition = '0 0';
+        app.style.backgroundPosition = '-20px 0';
         app.style.backgroundSize = '1920px auto';
+        header.style.background = `${backgorunds.cunrentBackground.color}`;
+        headerPlaylist.style.background = `${backgorunds.cunrentBackground.color}`;
+        headerNavbar.style.background = `rgba(${backgorunds.cunrentBackground.color},0.5)`;
     },
     stars(){
         this.defaultProperties();
@@ -88,20 +90,20 @@ const backgorunds = {
 }
 backgorunds.stars();
 
-window.onscroll = function(){
-    if(scrollY > 1){
-        header.style.background = `${backgorunds.cunrentBackground.color}`;
-        headerPlaylist.style.background = `${backgorunds.cunrentBackground.color}`;
-        header.style.backgroundRepeat = 'no-repeat';
-        header.style.backgroundPosition = 'center';
-        header.style.backgroundSize = 'cover';
-        headerPlaylist.style.backgroundRepeat = 'no-repeat';
-        headerPlaylist.style.backgroundPosition = 'center';
-        headerPlaylist.style.backgroundSize = 'cover';
-    }else{
-        header.style.background = 'none'
-    }
-}
+// app.onscroll = function(e){
+//     if(e.scrollY > 1){
+//         // header.style.background = `${backgorunds.cunrentBackground.color}`;
+//         headerPlaylist.style.background = `${backgorunds.cunrentBackground.color}`;
+//         header.style.backgroundRepeat = 'no-repeat';
+//         header.style.backgroundPosition = 'center';
+//         header.style.backgroundSize = 'cover';
+//         headerPlaylist.style.backgroundRepeat = 'no-repeat';
+//         headerPlaylist.style.backgroundPosition = 'center';
+//         headerPlaylist.style.backgroundSize = 'cover';
+//     }else{
+//         // header.style.background = 'none'
+//     }
+// }
 
 openBackground.onclick = function(){
     appBackground.style.display = 'block'
