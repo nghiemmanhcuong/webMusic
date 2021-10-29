@@ -1,0 +1,5 @@
+@keyframes barAnimation {
+    100% {
+        height: .5rem;
+    }
+}

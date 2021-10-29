@@ -1,7 +1,7 @@
 const prevBtn = document.getElementById('prev-slide');
 const nextBtn = document.getElementById('next-slide');
-const sliderMain = document.querySelector('.featured__main');
-const sliders = document.querySelectorAll('.slider__item');
+const sliderMain = document.querySelector('.hotsongs__main');
+const sliders = document.querySelectorAll('.hotsongs__item');
 let index = 0;
 
 nextBtn.onclick = function(){

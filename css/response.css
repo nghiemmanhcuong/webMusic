@@ -15,7 +15,7 @@
     .header__login {
         padding-right: 0;
     }
-    .toppick-featured{
+    .toppick-hotsongs{
         flex-direction: column;
     }
     .top__picks {
@@ -54,7 +54,7 @@
         padding-bottom: 12rem;
     }
     .album__item{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: var(--mb-1);
     }
     .album__box{
@@ -106,6 +106,9 @@
     .cd__icon{
         gap: 0;
     }
+    .album__item{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media (max-width:415px){
     html{
@@ -136,9 +139,6 @@
     }
     .heading{
         padding-top:var(--mb-1-5);
-    }
-    .slider{
-        grid-template-columns: repeat(2,1fr);
     }
     .top__picks {
         width: 100%;
@@ -196,6 +196,9 @@
     }
     .container__navbar-menu{
         width: 95%;
+    }
+    .mv__slider-box:nth-child(3){
+        display: none;
     }
 }
 

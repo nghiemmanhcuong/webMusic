@@ -1,4 +1,4 @@
-const hotsonglist = document.querySelector('.featured__main');
+const hotsonglist = document.querySelector('.hotsongs__main');
 import {
     cdName,
     cdAuthor,
@@ -93,7 +93,7 @@ const hotSong = {
 }
 
 hotsonglist.onclick = function(e){
-    const hotSongElemnt = e.target.closest('.slide__img');
+    const hotSongElemnt = e.target.closest('.hotsongs__container');
     if(hotSongElemnt){
         hotSong.hotSongIndex = hotSongElemnt.dataset.index;
     }
