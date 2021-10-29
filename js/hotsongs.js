@@ -1,4 +1,9 @@
 const hotsonglist = document.querySelector('.hotsongs__main');
+const prevBtn = document.getElementById('prev-slide');
+const nextBtn = document.getElementById('next-slide');
+const sliderMain = document.querySelector('.hotsongs__main');
+const sliders = document.querySelectorAll('.hotsongs__item');
+
 import {
     cdName,
     cdAuthor,
@@ -88,7 +93,7 @@ const hotSong = {
             get:function(){
                 return hotSong.hotsongs[hotSong.hotSongIndex]
             }
-        })
+        });
     }
 }
 
@@ -104,8 +109,32 @@ hotsonglist.onclick = function(e){
     cdAnimation.play();
     audio.play();
 }
-function startHotSong(){
-    hotSong.defaultProperties();
+
+function defaultEvent(){
+    let index = 0;
+    nextBtn.onclick = function(){
+        index++;
+        if(index === sliders.length){
+            index = 0;
+        }
+        sliderMain.style.right = index*100+'%'
+    }
+    prevBtn.onclick = function(){
+        index--;
+        if(index < 0){
+            index = sliders.length - 1;
+        }
+        sliderMain.style.right = index*100+'%'
+    }
+
+    setInterval(function(){
+        nextBtn.click();
+    },5000)
 }
-startHotSong();
+
+function start(){
+    hotSong.defaultProperties();
+    defaultEvent();
+}
+start();
 
