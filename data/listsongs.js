@@ -2,6 +2,7 @@ const thesong = document.getElementById('thesong');
 const thesongContainer = document.querySelector('.thesong__container');
 import removeActiveNavbar from '../main.js';
 import removeOverview from './overview.js';
+import {thesongs} from './overview.js'
 import {
     cdName,
     cdAuthor,
@@ -14,9 +15,7 @@ thesong.onclick = ()=>{
     removeActiveNavbar();
     removeOverview();
     thesong.classList.add('active');
-    setTimeout(function(){
-        alert("chức năng chưa được tối ưu xin thông cảm \"thank kiu\"");
-    },1000);
+    thesongs.style.display = 'block';
 }
 
 const listsongs = {
