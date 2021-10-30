@@ -2,11 +2,21 @@ const thesong = document.getElementById('thesong');
 const thesongContainer = document.querySelector('.thesong__container');
 import removeActiveNavbar from '../main.js';
 import removeOverview from './overview.js';
+import {
+    cdName,
+    cdAuthor,
+    cdThumb,
+    audio,
+    cdAnimation
+} from './songs.js';
 
 thesong.onclick = ()=>{
     removeActiveNavbar();
     removeOverview();
     thesong.classList.add('active');
+    setTimeout(function(){
+        alert("chức năng chưa được tối ưu xin thông cảm \"thank kiu\"");
+    },1000);
 }
 
 const listsongs = {
@@ -170,10 +180,27 @@ function renderSong(){
 
 function defaultEvent(){
     thesongContainer.onclick = (e)=>{
-        playlistElement = e.target.closest('.thesong__playlist');
+        const playlistElement = e.target.closest('.thesong__playlist');
         listsongs.listsongIndex = playlistElement.dataset.index;
-        
+        removePlaylistActive();
+        playSong();
     }
+}
+
+function removePlaylistActive(){
+    const playlistActive = document.querySelector('.thesong__playlist.active');
+    const playlists = document.querySelectorAll('.thesong__playlist');
+    playlistActive.classList.remove('active');
+    playlists[listsongs.listsongIndex].classList.add('active');
+}
+
+function playSong(){
+    cdName.textContent = `${listsongs.listsongsGround[listsongs.listsongIndex].name}`;
+    cdAuthor.textContent = `${listsongs.listsongsGround[listsongs.listsongIndex].singer}`;
+    cdThumb.style.backgroundImage =  `url("${listsongs.listsongsGround[listsongs.listsongIndex].image}")`;
+    audio.src = `${listsongs.listsongsGround[listsongs.listsongIndex].path}`;
+    cdAnimation.play();
+    audio.play();
 }
 
 function stars(){
