@@ -5,7 +5,7 @@ const closeBackground = document.querySelector('.background__close-btn');
 const applyBackgroundBtns = document.querySelectorAll('.theme__action-btn');
 const header = document.querySelector('.header');
 const headerPlaylist = document.querySelector('.header__playMisic');
-import {headerNavbar} from './main.js';
+import {headerNavbar} from '../main.js';
 
 const backgorunds = {
     cunrentIndex:2,

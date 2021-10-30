@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/response.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href=".css/response.css">
     <link rel="stylesheet" href="./css/keyframes.css">
     <title>Nhạc cá nhân | Xem bài hát, album, MV đang hot nhất hiện tại</title>
 </head>
@@ -322,12 +322,12 @@
             </div>
             <div class="container__navbar row">
                 <ul class="container__navbar-menu row">
-                    <li class="container__navbar-item active">overview</li>
-                    <li class="container__navbar-item">the songs</li>
-                    <li class="container__navbar-item">playlist</li>
-                    <li class="container__navbar-item">albums</li>
-                    <li class="container__navbar-item">mv</li>
-                    <li class="container__navbar-item">nghệ sĩ</li>
+                    <li class="container__navbar-item active" id="overview">overview</li>
+                    <li class="container__navbar-item" id="thesong">the songs</li>
+                    <li class="container__navbar-item" id="playlist">playlist</li>
+                    <li class="container__navbar-item" id="albums">albums</li>
+                    <li class="container__navbar-item" id="mv">mv</li>
+                    <li class="container__navbar-item" id="artist">artist</li>
                 </ul>
             </div>
             <!-- end slider -->
@@ -444,6 +444,26 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app__playlist">
+                <div class="playlist__content row">
+                    <h3 class="playlist__heading heading">playlist</h3>
+                    <div class="playlist__content slide-btn">
+                        <div class="slide__arow-btn active" id="prev-playlist">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="slide__arow-btn" id="next-playlist">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist__slider">
+                    <div class="playlist__slider-main">
+                        
                     </div>
                 </div>
             </div>
@@ -974,35 +994,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="app__artist">
-                    <div class="artist__content row">
-                        <h3 class="artist__heading heading">artist</h3>
-                        <div class="artist__content slide-btn">
-                            <div class="slide__arow-btn active" id="prev-artist">
-                                <i class="ri-arrow-left-s-line"></i>
-                            </div>
-                            <div class="slide__arow-btn" id="next-artist">
-                                <i class="ri-arrow-right-s-line"></i>
-                            </div>
+            <div class="app__artist">
+                <div class="artist__content row">
+                    <h3 class="artist__heading heading">artist</h3>
+                    <div class="artist__content slide-btn">
+                        <div class="slide__arow-btn active" id="prev-artist">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="slide__arow-btn" id="next-artist">
+                            <i class="ri-arrow-right-s-line"></i>
                         </div>
                     </div>
-                    <div class="artist__sliders">
-                        <div class="artist__main">
+                </div>
+                <div class="artist__sliders">
+                    <div class="artist__main">
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="module" src="./js/songs.js"></script>
-    <script type="module" src="./js/hotsongs.js"></script>
-    <script type="module" src="js/MVs.js"></script>
-    <script type="module" src="./js/artists.js"></script>
-    <script type="module" src="./js/backgroundOptions.js"></script>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./data/artists.js"></script>
+    <script type="module" src="./data/backgroundOptions.js"></script>
+    <script type="module" src=".data/hotsongs.js"></script>
+    <script type="module" src="./data/MVs.js"></script>
+    <script type="module" src="./data/playlists.js"></script>
+    <script type="module" src="./data/songs.js"></script>
+    <script type="module" src="./data/listsongs.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>

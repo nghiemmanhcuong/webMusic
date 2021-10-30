@@ -3,7 +3,6 @@ const mvSliderContainer = document.querySelector('.mv__slider-container');
 const mvSliderItem = document.querySelectorAll('.mv__slider-item');
 const mvPrev = document.getElementById('prev-mv');
 const mvNext = document.getElementById('next-mv');
-console.log(mvSliderItem)
 let index = 0;
 
 const mvs = {
@@ -84,39 +83,23 @@ const mvs = {
             author:'MR.siro'
         },
     ],
-    renderMv(){
-        const htmls =  this.listMV.map(function(mv){
-            return `
-            <div class="mv__slider-box">
-                <div class="mv__slider-box-video">
-                    <img class="mv__slider-box-img" src="${mv.image}" alt="">
-                </div>
-                <div class="mv__slider-box-content row">
-                    <img src="${mv.image}" alt="" class="mv__slider-box-avatar">
-                    <div class="mv__slider-box-information">
-                        <h4 class="mv__slider-box-title">${mv.name}</h4>
-                        <span class="mv__slider-box-subtitle">${mv.author}</span>
-                    </div>
-                </div>
-            </div>
-            `        
-        })
-    },
-    defaultEvent(){
-       mvNext.onclick = ()=>{
-            mvPrev.classList.remove('active')
-           index++;
-           if(index === mvSliderItem.length){
-               index = mvSliderItem.length - 1;
-               
-           }
-           if(index === mvSliderItem.length-1){
-               mvNext.classList.add('active');
-           }
-           mvSliderContainer.style.right = index*100+'%';
-       }
+}
 
-       mvPrev.onclick = ()=>{ 
+function defaultEvent(){
+    mvNext.onclick = ()=>{
+         mvPrev.classList.remove('active')
+        index++;
+        if(index === mvSliderItem.length){
+            index = mvSliderItem.length - 1;
+            
+        }
+        if(index === mvSliderItem.length-1){
+            mvNext.classList.add('active');
+        }
+        mvSliderContainer.style.right = index*100+'%';
+    }
+
+    mvPrev.onclick = ()=>{ 
         mvNext.classList.remove('active')
         index--;
         if(index < 0){
@@ -126,8 +109,26 @@ const mvs = {
             mvPrev.classList.add('active');
         }
         mvSliderContainer.style.right = index*100+'%';
-        }
-    } 
-}
-mvs.renderMv();
-mvs.defaultEvent();
+     }
+ } 
+
+// function renderMv(){
+//     const htmls =  this.listMV.map(function(mv){
+//         return `
+//         <div class="mv__slider-box">
+//             <div class="mv__slider-box-video">
+//                 <img class="mv__slider-box-img" src="${mv.image}" alt="">
+//             </div>
+//             <div class="mv__slider-box-content row">
+//                 <img src="${mv.image}" alt="" class="mv__slider-box-avatar">
+//                 <div class="mv__slider-box-information">
+//                     <h4 class="mv__slider-box-title">${mv.name}</h4>
+//                     <span class="mv__slider-box-subtitle">${mv.author}</span>
+//                 </div>
+//             </div>
+//         </div>
+//         `        
+//     })
+// }
+// renderMv();
+defaultEvent();

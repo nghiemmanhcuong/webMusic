@@ -10,3 +10,23 @@ headerNavbarclose.onclick = function(){
     headerNavbarclose.style.display = 'none';
     headerNavbar.classList.remove('active');
 }
+
+/*add overview*/
+
+/*removeActiveNavbar*/
+
+function removeActiveNavbar(){
+    const navbarItemActive = document.querySelector('.container__navbar-menu .active');
+    navbarItemActive.classList.remove('active')
+}
+export default removeActiveNavbar;
+
+/* OVERVIEW OPEN */
+
+(function overviewOpen(){
+    const overview = document.getElementById('overview');
+    overview.onclick = ()=>{
+        removeActiveNavbar();
+        overview.classList.add('active');
+    }
+})();
