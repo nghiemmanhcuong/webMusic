@@ -291,23 +291,61 @@ body {
     padding-right: var(--mb-1-5);
 }
 
-.login__background {
+.header__login-btn {
     justify-content: center;
     background-color: var(--light-color);
-}
-
-.login__background .icon {
-    color: var(--text-color);
-    font-size: var(--small-font);
-}
-
-.login__background,
-.login__avatar {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+}
+
+.header__login-btn .icon {
+    color: var(--text-color);
+    font-size: var(--small-font);
+}
+
+.login__cog-btn{
+    position: relative;
+    overflow: visible;
+}
+
+.header__login-cog{
+    position: absolute;
+    top: 4.5rem;left:-18rem;
+    width: 22rem;
+    background-color: #6a39af;
+    border-radius: 1rem;
+    display: none;
+    overflow: hidden;
+    padding: var(--mb-1) 0;
+}
+
+.header__login-cog.open{
+    display: block;
+}
+
+.header__login-cog--top{
+    border-bottom: 1px solid var(--light-color);
+}
+.header__login-cog--item{
+    color: var(--text-color);
+    font-size: var(--smallest-font);
+    padding: var(--mb-1);
+    transition: none;
+}
+
+.header__login-cog--item:hover{
+    background-color: var(--light-color);
+}
+
+.header__login-cog--title{
+    letter-spacing: normal;
+}
+
+.header__login-cog--bottom .header__login-cog--item{
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .login__img {
@@ -1404,6 +1442,12 @@ body {
 .thesong__playlist-info--subtitle {
     color: var(--gray-color);
     font-size: 1.2rem;
+    transition: none;
+}
+
+.thesong__playlist-info--subtitle:hover{
+    color: #ce267a;
+    text-decoration: underline;
 }
 
 .thesong__playlist-time {

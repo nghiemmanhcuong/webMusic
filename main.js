@@ -1,10 +1,13 @@
+export const headerNavbar = document.querySelector('.header__navbar');
 const headerNavbarOpen = document.getElementById('header-nav-open');
 const headerNavbarclose = document.getElementById('header-nav-close');
-export const headerNavbar = document.querySelector('.header__navbar');
 const playListBtn = document.getElementById('playlist');
 const albumBtn = document.getElementById('albums');
 const mvBtn = document.getElementById('mv');
 const artistBtn = document.getElementById('artist');
+const LoginCog = document.querySelector('.header__login-cog');
+const loginCogBtn = document.querySelector('.login__cog-btn');
+const appContainer = document.querySelector('.app__container');
 import {
     toppickHotsongs,
     playlist,
@@ -91,11 +94,20 @@ function openArtist(){
     }
 }
 
+function openCog(){
+    loginCogBtn.onclick = ()=>{
+        LoginCog.classList.toggle('open');
+    }
+}
+
+
+
 function starts(){
-    openPlaylist();
     toggerHeaderNavbar();
+    openPlaylist();
     openAlbum();
     openMv();
     openArtist();
+    openCog();
 }
 starts();
