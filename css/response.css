@@ -107,7 +107,7 @@
         gap: 0;
     }
     .album__item{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 }
 @media (max-width:415px){
@@ -205,5 +205,34 @@
 @media (max-width:376px){
     .cd__name {
         min-width: 0rem;
+    }
+    .playlist__slider-box:first-child{
+        display: none;
+    }
+    .playlist__box-title--link{
+        display:-webkit-box;
+        -webkit-line-clamp:1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+    .playlist__sliders,
+    .artist__sliders{
+        height: 23rem;
+    }
+    .playlist__slider-main,
+    .artist__main{
+        gap: 2.2rem;
+    }
+    .playlist__slider-box,
+    .artist__box{
+        width: 12rem;
+    }
+    .artist__box-avatar{
+        height: 12rem;
+    }
+    .artist__box-follow{
+        font-size: 1rem;
     }
 }

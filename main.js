@@ -11,8 +11,6 @@ headerNavbarclose.onclick = function(){
     headerNavbar.classList.remove('active');
 }
 
-/*add overview*/
-
 /*removeActiveNavbar*/
 
 function removeActiveNavbar(){

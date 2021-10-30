@@ -126,11 +126,12 @@ function defaultEvent(){
         }
         sliderMain.style.right = index*100+'%'
     }
-
-    setInterval(function(){
-        nextBtn.click();
-    },3000)
 }
+
+setInterval(function(){
+        nextBtn.click();
+},3000)
+
 
 function start(){
     hotSong.defaultProperties();

@@ -35,15 +35,15 @@ const app = {
       path: "./assets/songs/song1.mp3",
       image: "./assets/images/songs/song1.jpg",
       albums:"dễ thương",
-      time:"03:54"
+      time:"04:41"
     },
     {
       name: "Crush",
       singer: "An An x Vani",
       path: "./assets/songs/song2.mp3",
       image: "./assets/images/songs/song2.jpg",
-      albums:"Tình yêu",
-      time:"03:54"
+      albums:"nhạc trẻ",
+      time:"04:06"
     },
     {
       name: "Em Có Nghe",
@@ -51,7 +51,7 @@ const app = {
       path: "./assets/songs/song3.mp3",
       image: "./assets/images/songs/song3.jpg",
       albums:"Tình yêu",
-      time:"03:54"
+      time:"04:33"
     },
     {
       name: "LẠC TRÔI ",
@@ -59,7 +59,7 @@ const app = {
       path: "./assets/songs/song4.mp3",
       image: "./assets/images/songs/song4.jpg",
       albums:"Tình yêu",
-      time:"03:54"
+      time:"04:33"
     },
     {
       name: "dreAMEE",
@@ -67,7 +67,7 @@ const app = {
       path: "./assets/songs/song5.mp3",
       image: "./assets/images/songs/song5.jpg",
       albums:"Tình yêu",
-      time:"03:54"
+      time:"02:42"
     },
     {
       name: "Damn",
@@ -83,7 +83,7 @@ const app = {
       path: "./assets/songs/song7.mp3",
       image: "./assets/images/songs/song7.jpg",
       albums:"Tình yêu",
-      time:"03:54"
+      time:"03:22"
     },
     {
       name: "Túy Âm",
@@ -99,7 +99,7 @@ const app = {
       path: "./assets/songs/song9.mp3",
       image: "./assets/images/songs/song9.jpg",
       albums:"Tình yêu",
-      time:"03:54"
+      time:"03:45"
     },
     {
       name: "một năm mới bình an",
@@ -107,7 +107,7 @@ const app = {
       path: "./assets/songs/song10.mp3",
       image: "./assets/images/songs/song10.jpg",
       albums:"tết",
-      time:"03:54"
+      time:"04:12"
     },
     {
       name: "seve",
@@ -115,8 +115,40 @@ const app = {
       path: "./assets/songs/song11.mp3",
       image: "./assets/images/songs/song11.jpg",
       albums:"vivo",
-      time:"04:31"
-    }
+      time:"05:34"
+    },
+    {
+      name: "ái nộ",
+      singer: "Masew & Khoi Vu",
+      path: "./assets/songs/song12.mp3",
+      image: "./assets/images/songs/song12.jpg",
+      albums:"nhạc trẻ",
+      time:"03:21"
+    },
+    {
+      name: "cưới thôi",
+      singer: "Masew, Masiu, B Ray, TAP",
+      path: "./assets/songs/song13.mp3",
+      image: "./assets/images/songs/song13.jpg",
+      albums:"nhạc trẻ",
+      time:"03:03"
+    },
+    {
+      name: "thê lương",
+      singer: "Phúc Chinh",
+      path: "./assets/songs/song14.mp3",
+      image: "./assets/images/songs/song14.jpg",
+      albums:"nhạc trẻ",
+      time:"05:13"
+    },
+    {
+      name: "dịu dàng em đến",
+      singer: "RedT & DTAP",
+      path: "./assets/songs/song15.mp3",
+      image: "./assets/images/songs/song15.jpg",
+      albums:"nhạc trẻ",
+      time:"03:05"
+    },
   ],
   defaultProperties(){
     Object.defineProperty(this,'cunrentSong',{
