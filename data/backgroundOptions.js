@@ -8,7 +8,7 @@ const headerPlaylist = document.querySelector('.header__playMisic');
 import {headerNavbar} from '../main.js';
 
 const backgorunds = {
-    cunrentIndex:2,
+    cunrentIndex:0,
     backgorundList:[
         {
             color:'#37075d'
