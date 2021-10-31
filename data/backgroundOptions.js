@@ -54,6 +54,9 @@ const backgorunds = {
         {
             color:'#1d375a'
         },
+        {
+            option:'./assets/images/modalThemes/modalTheme3/theme7.jpg'
+        }
     ],
     defaultProperties(){
         Object.defineProperty(this,'cunrentBackground',{
