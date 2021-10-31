@@ -14,9 +14,10 @@
     --text-color: #fff;
     --red-color: rgb(224, 30, 62);
     --purple-color: #6a39af;
-    --light-color: rgba(255, 255, 255, 0.192);
+    --light-color: rgba(255, 255, 255, 0.2);
     --gray-color: #aaa;
     --background-opacity: rgba(0, 0, 0, .5);
+    --navbarbackground-color:rgba(255, 255, 255, 0.3);
 
     --mb-3: 3rem;
     --mb-2: 2rem;
@@ -28,6 +29,14 @@
     --medium-font: 2.5rem;
     --small-font: 1.8rem;
     --smallest-font: 1.3rem;
+}
+
+body.active{
+    --text-color:#000;
+    --gray-color:#333;
+    --light-color: rgba(255, 255, 255);
+    --navbarbackground-color:rgba(0, 0, 0, 0.4);
+    --navbartext-color:#fff;
 }
 
 html {
@@ -49,7 +58,7 @@ body {
 }
 
 .heading {
-    color: #fff;
+    color: var(--text-color);
     font-size: 2rem;
     padding-top: var(--mb-3);
     text-transform: uppercase;
@@ -313,7 +322,7 @@ body {
 
 .header__login-cog{
     position: absolute;
-    top: 4.5rem;left:-18rem;
+    top: 6.5rem;right:6.5rem;
     width: 22rem;
     background-color: #6a39af;
     border-radius: 1rem;
@@ -334,6 +343,7 @@ body {
     font-size: var(--smallest-font);
     padding: var(--mb-1);
     transition: none;
+    cursor: pointer;
 }
 
 .header__login-cog--item:hover{
@@ -638,7 +648,7 @@ body {
 }
 
 .container__navbar-item.active {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: var(--navbarbackground-color);
 }
 
 /* top picks */
@@ -810,11 +820,11 @@ body {
 }
 
 .hotsongs__interact-btn {
-    color: var(--text-color);
+    color: #fff;
     background-color: rgb(6, 29, 80);
     height: 4rem;
     width: 4rem;
-    border: 2px solid var(--text-color);
+    border: 2px solid #fff;
     outline: none;
     border-radius: 50%;
     text-transform: uppercase;
@@ -911,7 +921,7 @@ body {
 
 .album__img-icon i {
     font-size: var(--small-font);
-    color: var(--text-color);
+    color: #fff;
 }
 
 .album__img-icon:first-child i {
@@ -946,6 +956,7 @@ body {
 
 .album__title:hover {
     color: #6e8ffb;
+    text-decoration: underline;
 }
 
 .album__subtitle {
@@ -1043,7 +1054,7 @@ body {
 
 .mv__slider-box-playicon {
     font-size: var(--medium-font);
-    color: var(--text-color);
+    color: #fff;
     cursor: pointer;
 }
 
@@ -1172,7 +1183,7 @@ body {
 
 .artist__box-playicon {
     font-size: var(--medium-font);
-    color: var(--text-color);
+    color: #fff;
     cursor: pointer;
 }
 
@@ -1288,16 +1299,17 @@ body {
     text-align: center;
 }
 
-.playlist__slider-box:first-child .playlist__box-title--link {
+.playlist__slider-box:first-child .playlist__box-title--link i {
     font-size: 5rem;
     font-weight: lighter;
     text-decoration: none;
+    color: #fff;
 }
 
 .playlist__slider-box:first-child .playlist__slider-content-subtitle {
     font-size: var(--smallest-font);
     letter-spacing: 0;
-    color: var(--text-color);
+    color: #fff;
 }
 
 .playlist__slider-container {
@@ -1330,7 +1342,7 @@ body {
 
 .playlist__slider-actions--icon {
     font-size: var(--small-font);
-    color: var(--text-color);
+    color: #fff;
 }
 
 .playlist__slider-actions--icon:first-child {

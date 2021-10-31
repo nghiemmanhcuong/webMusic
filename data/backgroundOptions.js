@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const app = document.querySelector('.app');
 const appBackground = document.querySelector('.app__backgorund');
 const openBackground = document.querySelector('.background__open-btn');
@@ -43,7 +44,6 @@ const backgorunds = {
         },
         {
             color:'#170f23'
-
         },
         {
             color:'#101f3f'
@@ -54,9 +54,6 @@ const backgorunds = {
         {
             color:'#1d375a'
         },
-        {
-            option:'./assets/images/modalThemes/modalTheme3/theme7.jpg'
-        }
     ],
     defaultProperties(){
         Object.defineProperty(this,'cunrentBackground',{
@@ -69,6 +66,14 @@ const backgorunds = {
         applyBackgroundBtns.forEach(function(applyBackgroundBtn){
             applyBackgroundBtn.onclick = function(e){
                 backgorunds.cunrentIndex = Number(e.target.dataset.index);
+                if( backgorunds.cunrentIndex === 3 || 
+                    backgorunds.cunrentIndex === 4 ||
+                    backgorunds.cunrentIndex === 5 ||
+                    backgorunds.cunrentIndex === 6){
+                    body.classList.add('active');
+                    }else{
+                        body.classList.remove('active')
+                    }
                 header.style.background = `${backgorunds.cunrentBackground.color}`;
                 headerPlaylist.style.background = `${backgorunds.cunrentBackground.color}`;
                 backgorunds.applyBackground();
