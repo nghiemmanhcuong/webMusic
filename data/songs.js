@@ -149,6 +149,14 @@ const app = {
       albums:"nhạc trẻ",
       time:"03:05"
     },
+    {
+      name: "Nếu Em Không Hạnh Phúc ",
+      singer: "Long Hải",
+      path: "./assets/songs/song16.mp3",
+      image: "./assets/images/songs/song16.jpg",
+      albums:"nhạc dj",
+      time:"04:15"
+    },
   ],
   defaultProperties(){
     Object.defineProperty(this,'cunrentSong',{
