@@ -1,4 +1,3 @@
-const navbarMenu = document.querySelector('.navbar__menu');
 const navbarItem = document.querySelectorAll('.navbar__item');
 
 function toast(title,subtitle){

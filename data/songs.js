@@ -266,8 +266,8 @@ function handleEvent(){
       app.curentIndex++;
       if(app.curentIndex >= app.songs.length){
       app.curentIndex = 0;
-    }
-    loadCurentSong();
+      }
+      loadCurentSong();
     }
     activeSong();
     scrollToSongActive();
@@ -313,7 +313,7 @@ function handleEvent(){
           }
           audio.play();
       case 37:
-        audio.currentTime++;
+        audio.currentTime--;
         if(audio.currentTime = 0){
           audio.currentTime = 0;
         }
