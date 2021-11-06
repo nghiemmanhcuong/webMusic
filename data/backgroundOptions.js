@@ -15,15 +15,15 @@ const backgorunds = {
             color:'#37075d'
         },
         {
-            option:'./assets/images/themeBgs/listTheme1/theme2.jpg',
+            option:'../assets/images/themeBgs/listTheme1/theme2.jpg',
             color:'#282828'
         },
         {
-            option:'./assets/images/themeBgs/listTheme2/theme1.jpg',
+            option:'../assets/images/themeBgs/listTheme2/theme1.jpg',
             color:'#061d50'
         },
         {
-            option:'./assets/images/themeBgs/listTheme2/theme2.jpg',
+            option:'../assets/images/themeBgs/listTheme2/theme2.jpg',
             color:'#e7dfdd'
         },
         {
@@ -31,11 +31,11 @@ const backgorunds = {
             color:'#b2d8db'
         },
         {
-            option:'./assets/images/themeBgs/listTheme2/theme4.jpg',
+            option:'../assets/images/themeBgs/listTheme2/theme4.jpg',
             color:'#f9dbdb'
         },
         {
-            option:'./assets/images/themeBgs/listTheme2/theme5.jpg',
+            option:'../assets/images/themeBgs/listTheme2/theme5.jpg',
             color:'#bab8c3'
         },
         {
