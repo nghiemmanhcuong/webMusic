@@ -780,6 +780,8 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
+    right: 0;
+    transition: 0.5s linear;
 }
 
 .hotsongs__item {
@@ -985,13 +987,13 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-
 }
 
 .mv__slider-container {
     display: flex;
     width: 100%;
     position: relative;
+    right: 0;
 }
 
 .app__mv.view .mv__slider-container {

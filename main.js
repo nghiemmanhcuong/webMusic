@@ -7,7 +7,7 @@ const mvBtn = document.getElementById('mv');
 const artistBtn = document.getElementById('artist');
 const LoginCog = document.querySelector('.header__login-cog');
 const loginCogBtn = document.querySelector('.login__cog-btn');
-const appContainer = document.querySelector('.app__container');
+// const appContainer = document.querySelector('.app__container');
 import {
     toppickHotsongs,
     playlist,
@@ -15,7 +15,7 @@ import {
     mv,
     artist,
     thesongs
-} from '/data/overview.js';
+} from './data/overview.js';
 
 /*togger header Navbar*/
 function toggerHeaderNavbar(){
