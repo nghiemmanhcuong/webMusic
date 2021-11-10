@@ -110,7 +110,6 @@ const playlists = {
 
 function defaultEvent(){
     const boxElement = document.querySelectorAll('.playlist__slider-box');
-    console.log(boxElement.length)
     let boxLenght = boxElement.length/5;
     let index = 0;
     nextPlaylist.onclick = ()=>{
